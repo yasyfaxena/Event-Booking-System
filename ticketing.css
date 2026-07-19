@@ -1,0 +1,154 @@
+html,
+body {
+    background-color: #6582aa;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Mencegah pengguliran */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    /* Pastikan container mengisi seluruh layar */
+    width: 100%;
+    /* Mengisi lebar layar */
+    overflow: hidden;
+    justify-content: center;
+    /* Mencegah pengguliran dalam container */
+}
+
+aside {
+    width: 250px;
+    background-color: #83a2cd;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    background-color: #83a2cd;
+    padding: 20px;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+    margin-bottom: 2px;
+}
+
+nav ul {
+    margin-top: 2px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    padding: 15px;
+    text-align: center;
+    color: #e6f7ff;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.divider {
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 10px 0;
+}
+
+main {
+    flex: 1;
+    padding: 0;
+    background-color: #e6f7ff;
+    overflow-y: auto;
+    /* Memungkinkan pengguliran vertikal hanya pada elemen main */
+}
+
+.ticketing h2 {
+    background-color: #1e2b40;
+    color: white;
+    padding: 25px;
+    margin: 0;
+    text-align: left;
+}
+
+.ticketing h3 {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.ticketing p {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+table {
+    width: calc(100% - 100px);
+    /* Mengurangi lebar agar tidak keluar dari viewport */
+    padding: 0;
+    /* Menghapus padding untuk mendekatkan ke divider */
+    margin: 0 auto;
+    /* Mengatur margin untuk mendekatkan ke divider */
+}
+
+table td {
+    padding: 10px;
+}
+
+.total-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 25%;
+    /* Agar kotak menyesuaikan dengan ukuran kontennya */
+    margin-top: 5px;
+    /* Jarak antara kotak dengan elemen di atasnya */
+    background-color: white;
+    /* Warna latar belakang */
+    color: black;
+    /* Warna teks */
+    border-radius: 5px;
+    /* Sudut bulat */
+    display: inline-block;
+    /* Agar kotak menyesuaikan ukuran kontennya */
+}
+
+.wrap-btn {
+    background-color: #003366;
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
+    bottom: 10px;
+    /* Mengatur margin dari bawah */
+    right: 10px;
+    /* Mengatur margin dari kanan */
+    margin-top: 20px;
+    /* Mengatur jarak dari elemen di atasnya */
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+}
+
+.buttons button {
+    background-color: #4f86bd;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+    margin: 0 10px 0 0;
+    /* Mengatur margin antar tombol */
+    cursor: pointer;
+}
